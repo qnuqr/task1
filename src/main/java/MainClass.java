@@ -22,7 +22,6 @@ public class MainClass {
         String buttonText = driver.findElement(By.xpath("//*[text()='Log In']")).getText();
         Assert.assertEquals("Log In", buttonText);
 
-
         driver.findElement(By.xpath("//*[@name='UserName']")).sendKeys("Anuar");
         driver.findElement(By.xpath("//*[@name='Password']")).sendKeys("pwd");
         driver.findElement(By.id("login")).click();
